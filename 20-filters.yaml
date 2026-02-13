@@ -3,10 +3,12 @@
   connection: local
   vars:
     topics: linux, shell, ansible, terraform
+
   tags:
   - name: ansible
     project: roboshop
     component: catalogue
+
   tasks:
   - name: greetings
     ansible.builtin.debug:
@@ -15,3 +17,7 @@
   - name: convert string to list
     ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
+
+  - nmae: show metadata
+    ansible.builtin.debug:
+      msg: "{{ metadata }}"
