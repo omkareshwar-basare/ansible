@@ -9,7 +9,7 @@
       project: roboshop
       component: catalogue
     tagsList:
-    [
+    
         {
             "key": "name",
             "value": "ansible"
@@ -22,7 +22,6 @@
             "key": "component",
             "value": "catalogue"
         }
-    ]
 
   tasks:
   - name: greetings
