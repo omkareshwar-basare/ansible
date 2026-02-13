@@ -1,5 +1,5 @@
 - name: demo on data types
-  host: local
+  hosts: local
   connection: local
   vars:
     PROGRAM: "Devops with AWS"  # string
@@ -20,4 +20,3 @@
           Duration: {{ DURATION }}
           Is Live: {{ IS_LIVE}}
           Details: {{ DETAILS }}
-          
