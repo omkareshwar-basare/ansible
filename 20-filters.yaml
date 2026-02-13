@@ -4,7 +4,7 @@
   vars:
     topics: linux, shell, ansible, terraform
   tags:
-    name: ansible
+  - name: ansible
     project: roboshop
     component: catalogue
   tasks:
