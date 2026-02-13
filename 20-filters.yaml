@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   tags:
-    name: ansible
+  - name: ansible
     project: roboshop
     component: catalogue
 
