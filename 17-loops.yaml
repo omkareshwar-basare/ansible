@@ -1,0 +1,10 @@
+- name: demo on loop
+  hosts: local
+  connection: local
+  tasks:
+  ansible.builtin.debug:
+    msg: "Hello {{ item }}"  #item is reservrd keyword
+  loop:
+  - Ramesh
+  - Nikhil
+  - Bharath
