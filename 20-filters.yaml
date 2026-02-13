@@ -1,13 +1,13 @@
 - name: demo on filters
   hosts: local
   connection: local
-  tags:
-  - name: ansible
-    project: roboshop
-    component: catalogue
-
+  
   vars:
     topics: linux, shell, ansible, terraform
+    tags:
+      name: ansible
+      project: roboshop
+      component: catalogue
 
   tasks:
   - name: greetings
