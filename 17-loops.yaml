@@ -1,7 +1,8 @@
 - name: demo on loop
   hosts: local
   connection: local
-  tasks:
+
+  tasks: print names
   ansible.builtin.debug:
     msg: "Hello {{ item }}"  #item is reservrd keyword
   loop:
