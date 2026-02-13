@@ -1,0 +1,23 @@
+- name: demo on data types
+  host: local
+  connection: local
+  vars:
+    PROGRAM: "Devops with AWS"  # string
+    DURATION: 140 # int/number
+    IS_LIVE: true # boolean
+    DETAILS: # map/dictionary
+      MONTHS: 4
+      TRAINER: "Sivakumar Reddy"
+    TOPICS: # list -/[]
+    - Linux
+    - Shell
+    - Ansible
+    tasks:
+    - name: print variable
+      ansible.builtin.debug:
+        msg: |
+          Program: {{ PROGEAM }}
+          Duration: {{ DURATION }}
+          Is Live: {{ IS_LIVE}}
+          Details: {{ DETAILS }}
+          
