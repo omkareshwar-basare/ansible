@@ -2,10 +2,11 @@
   hosts: local
   connection: local
 
-  tasks: print names
-  ansible.builtin.debug:
-    msg: "Hello {{ item }}"  #item is reservrd keyword
-  loop:
-  - Ramesh
-  - Nikhil
-  - Bharath
+  tasks: 
+  - name: print names
+    ansible.builtin.debug:
+      msg: "Hello {{ item }}"  #item is reservrd keyword
+    loop:
+    - Ramesh
+    - Nikhil
+    - Bharath
