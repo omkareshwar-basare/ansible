@@ -1,6 +1,8 @@
 - name: demo on filters
   hosts: local
   connection: local
+  vars:
+    topics: linux, shell, ansible, terraform
   tasks:
   - name: greetings
     ansible.builtin.debug:
