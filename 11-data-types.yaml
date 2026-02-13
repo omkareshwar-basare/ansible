@@ -1,6 +1,7 @@
 - name: demo on data types
   hosts: local
   connection: local
+
   vars:
     PROGRAM: "Devops with AWS"  # string
     DURATION: 140 # int/number
@@ -12,6 +13,7 @@
     - Linux
     - Shell
     - Ansible
+    
     tasks:
     - name: print variable
       ansible.builtin.debug:
