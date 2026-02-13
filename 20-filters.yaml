@@ -4,7 +4,7 @@
 
   vars:
     topics: linux, shell, ansible, terraform
-    tags:
+    tagsMap:
       name: ansible
       project: roboshop
       component: catalogue
@@ -35,8 +35,8 @@
  
   - name: convert map to list
     ansible.builtin.debug:
-      msg: "{{ tags | dict2items }}"
+      msg: "{{ tagsMap | dict2items }}"
 
   - name: convert list to map
     ansible.builtin.debug:
-      msg: "{{ tags | items2dict }}"
+      msg: "{{ tagsList | items2dict }}"
