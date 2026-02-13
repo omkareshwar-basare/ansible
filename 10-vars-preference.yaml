@@ -1,12 +1,18 @@
 - name: variable preferance
   hosts: local
   connection: local
+
   vars:
     NAME: "Ansible from PLAY"
+
   vars_files:
+  - variable.yaml
+
+  vars_prompt:
   - name: NAME
     prompt: please enter name
     private: false
+    
   tasks:
   - name: print name
     vars:
