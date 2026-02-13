@@ -1,0 +1,11 @@
+- name: install package 
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: "{{ item }}"
+    state: present
+  loop:
+  - mysql
+  - nginx
+  - zip
