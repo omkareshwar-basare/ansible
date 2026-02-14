@@ -1,0 +1,12 @@
+- name: check idempotency
+  become: yes
+  hosts: local
+  connection: local
+  tasks:
+  - name: user add
+    ansible.builtin.user:
+      name: john
+
+  - name: print user
+    ansible.builtin.debug:
+      msg: "{{ user created: | john }}"
